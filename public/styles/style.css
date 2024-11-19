@@ -6,10 +6,8 @@ body {
 
 .nav {
     position: fixed;
-
     width: 100%;
     height: 48px;
-
     top: 0;
 
     background: rgba(255, 255, 255, 1);
@@ -43,9 +41,14 @@ body {
     height: 24px;
 }
 
+.custom-hr {
+    border-top: 1px solid black;
+    margin: 20px 0;
+    width: 100%;
+}
+
 .pagesSelector {
     width: 30%;
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -127,8 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 auto;
-
+    margin: 1rem auto;
     width: 925px;
 }
 
@@ -150,8 +152,16 @@ body {
 }
 
 td {
-    color: rgba(0, 0, 0, 0.87)
+	padding-left: 10px;
 }
+tr {
+	border-bottom: 1px solid #21212114;
+	width: 80%;
+}
+tr:first-child {
+	border: none;
+}
+
 
 .header {
     height: 44px;
@@ -314,12 +324,14 @@ td {
 .date_changer input {
     width: 180px;
     height: 40px;
-
+	padding-left: 0.5rem;
     margin-top: 28px;
 
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
 }
+
+/* type="datetime-local" */
 
 .date_changer span {
     padding: 0 16px;
@@ -362,7 +374,6 @@ td {
 .header > td {
     letter-spacing: 0.25px;
     text-align: left;
-
     color: rgba(0, 0, 0, 0.38);
 }
 
